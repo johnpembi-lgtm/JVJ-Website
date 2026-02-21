@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Gestion des événements</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<section class="team-content">
+
+    <h2>Ajouter un événement</h2>
+
+    <form id="eventForm">
+
+        <label>Team :</label>
+        <select id="team">
+            <option value="worship">Worship</option>
+            <option value="media">Media</option>
+            <option value="intercession">Intercession</option>
+        </select>
+
+        <label>Titre :</label>
+        <input type="text" id="title" required>
+
+        <label>Date :</label>
+        <input type="text" id="date" required>
+
+        <button type="submit" class="team-btn">
+            Ajouter
+        </button>
+
+    </form>
+
+    <hr style="margin:40px 0;">
+
+    <h2>Événements existants</h2>
+
+    <div id="adminEvents"></div>
+
+</section>
+
+<!-- SCRIPT IMPORTANT -->
+<script src="java/admin.js"></script>
+
+</body>
+</html>

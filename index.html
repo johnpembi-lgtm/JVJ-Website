@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+</html><!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -6,17 +7,19 @@
     <title>JVJ - Jesus Veut Notre Jeunesse</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
 
-<header>
-    <div class="logo">JVJ</div>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="image/logo-jvj.jpg" alt="JVJ Logo">
+    </div>
+
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="about.html">À propos</a>
         <a href="teams.html">Teams</a>
-        <a href="events.html">Événements</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="btn">Nous rejoindre</a>
     </nav>
 </header>
 
@@ -25,25 +28,77 @@
     <p>Un mouvement pour impacter la jeunesse pour Christ</p>
     <a href="teams.html" class="btn">Découvrir nos Teams</a>
 </section>
+<section class="section reveal">
+    <h2>Témoignages</h2>
 
-<footer class="footer">
-    <div class="footer-content">
-        <h3>JVJ</h3>
-        <p>Jeunesse Vivante en Jésus</p>
+    <div class="cards">
 
-        <div class="footer-links">
-            <a href="../index.html">Accueil</a>
-            <a href="../teams.html">Teams</a>
-            <a href="../about.html">À propos</a>
-            <a href="../index.html"></a>
+        <div class="card">
+            <p>
+                "JVJ a transformé ma vie spirituelle. J’ai grandi dans ma foi
+                et trouvé une vraie famille en Christ."
+            </p>
+            <h4>- Sarah M.</h4>
         </div>
 
-        <p class="copyright">
-            © 2026 JVJ - Tous droits réservés
-        </p>
+        <div class="card">
+            <p>
+                "Grâce aux activités et aux équipes, j’ai découvert
+                mon appel et mon potentiel."
+            </p>
+            <h4>- David K.</h4>
+        </div>
+
+        <div class="card">
+            <p>
+                "Un mouvement puissant pour la jeunesse.
+                Je recommande à tous les jeunes !"
+            </p>
+            <h4>- Esther L.</h4>
+        </div>
+
     </div>
+</section>
+
+<!-- Exemple de vraie section -->
+<section class="section fade-in">
+    <h2>À propos de JVJ</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        JVJ est un mouvement chrétien dédié à la jeunesse,
+        visant à former, accompagner et impacter les jeunes pour Christ.
+    </p>
+</section>
+<script>
+function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+<footer>
+    <h3>JVJ</h3>
+    <p>Jeunesse Vivante en Jésus</p>
+
+    <p>
+        <a href="index.html">Accueil</a> |
+        <a href="teams.html">Teams</a> |
+        <a href="about.html">À propos</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>© 2026 JVJ - Tous droits réservés</p>
 </footer>
 
-<script src="js/script.js"></script>
 </body>
 </html>
