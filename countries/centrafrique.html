@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVJ Centrafrique</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="../image/logo-jvj.jpg" alt="JVJ Logo">
+    </div>
+
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../teams.html">Teams</a>
+        <a href="../about.html">À propos</a>
+        <a href="../contact.html" class="btn">Nous rejoindre</a>
+    </nav>
+</header>
+
+<section class="hero" style="background-image: url('../image/image.png');">
+    <h1>JVJ Centrafrique</h1>
+    <p>Le mouvement JVJ en République Centrafricaine</p>
+</section>
+
+<!-- À PROPOS -->
+<section class="section reveal">
+    <h2>À propos de JVJ Centrafrique</h2>
+    
+    <div class="cards">
+        <div class="card">
+            <p>
+                <strong>JVJ Centrafrique</strong> est la branche du mouvement Jeunesse Vivante en Jésus 
+                en République Centrafricaine. Cette communauté dynamique de jeunes chrétiens 
+                s'engage à'impacter la jeunesse centrafricaine pour Christ.
+            </p>
+            <br>
+            <p>
+                À travers des activités variées et un engagement spirituel profond, 
+                JVJ Centrafrique cherche à former des jeunes leaders qui pourront 
+                transformer leur nation par l'Éviaire.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ACTIVITÉS -->
+<section class="section reveal">
+    <h2>Nos Activités</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Célèbres de Louange</h3>
+            <p>Des rassemblements de louange et d'adoration pour toute la communauté.</p>
+            <span class="tag">Chaque semaine</span>
+        </div>
+
+        <div class="card">
+            <h3>Écoles de Foi</h3>
+            <p>Des formations bibliques pour approfondir les connaissances théologiques.</p>
+            <span class="tag">Mensuel</span>
+        </div>
+
+        <div class="card">
+            <h3>Actions Humanitaires</h3>
+            <p>Des projets sociaux pour aider les communautés défavorisées.</p>
+            <span class="tag">Trimestriel</span>
+        </div>
+
+        <div class="card">
+            <h3></h3>
+            <p></p>
+            <span class="tag"></span>
+        </div>
+
+        <div class="card">
+            <h3></h3>
+            <p></p>
+            <span class="tag"></span>
+        </div>
+
+        <div class="card">
+            <h3>Concert Évangélique</h3>
+            <p>Des événements musicaux pour atteindre les jeunes par la culture.</p>
+            <span class="tag">Semestriel</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal">
+    <h2>Nous contacter</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Rejoignez-nous</h3>
+            <p>Vous êtes un jeune en Centrafrique ? Rejoignez la communauté JVJ !</p>
+            <a href="https://wa.me/+23672843913" 
+               class="btn-whatsapp" 
+               target="_blank">
+                Contacter via WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>JVJ</h3>
+    <p>Jeunesse Vivante en Jésus</p>
+
+    <p>
+        <a href="../index.html">Accueil</a> |
+        <a href="../teams.html">Teams</a> |
+        <a href="../about.html">À propos</a> |
+        <a href="../contact.html">Contact</a>
+    </p>
+
+    <p>© 2026 JVJ - Tous droits réservés</p>
+</footer>
+
+<script>
+function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+</body>
+</html>

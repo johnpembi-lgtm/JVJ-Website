@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVJ Sénégal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="../image/logo-jvj.jpg" alt="JVJ Logo">
+    </div>
+
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../teams.html">Teams</a>
+        <a href="../about.html">À propos</a>
+        <a href="../contact.html" class="btn">Nous rejoindre</a>
+    </nav>
+</header>
+
+<section class="hero" style="background-image: url('../image/image.png');">
+    <h1>JVJ Sénégal</h1>
+    <p>Le mouvement JVJ au Sénégal</p>
+</section>
+
+<!-- À PROPOS -->
+<section class="section reveal">
+    <h2>À propos de JVJ Sénégal</h2>
+    
+    <div class="cards">
+        <div class="card">
+            <p>
+                <strong>JVJ Sénégal</strong> représente la branche du mouvement Jeunesse Vivante en Jésus 
+                au Sénégal. Cette communauté de jeunes chrétiens passionnés s'efforce 
+                d'atteindre et de transformer la jeunesse sénégalaise pour Christ.
+            </p>
+            <br>
+            <p>
+                Avec un focus sur l'évangélisation et la formation de leaders, 
+                JVJ Sénégal joue un rôle important dans l'expansion du mouvement 
+                dans la région ouest-africaine.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ACTIVITÉS -->
+<section class="section reveal">
+    <h2>Nos Activités</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3></h3>
+            <p></p>
+            <span class="tag"></span>
+        </div>
+
+        <div class="card">
+            <h3>Formation de Leaders</h3>
+            <p>Des programmes de développement du leadership chrétien pour les jeunes.</p>
+            <span class="tag">Mensuel</span>
+        </div>
+
+        <div class="card">
+            <h3>Événements Sportifs</h3>
+            <p>Tournois et activités sportives pour atteindre les jeunes dans leur passion.</p>
+            <span class="tag">Trimestriel</span>
+        </div>
+
+        <div class="card">
+            <h3>Conférences Jeunesse</h3>
+            <p>Des conférences inspirantes avec des speakers internationaux.</p>
+            <span class="tag">Annuel</span>
+        </div>
+
+        <div class="card">
+            <h3>Music & Arts</h3>
+            <p>Promotion des talents artistiques chrétiens (musique, danse, théâtre).</p>
+            <span class="tag">Continu</span>
+        </div>
+
+        <div class="card">
+            <h3>Mission Locale</h3>
+            <p>Des missions d'évangélisation dans les villages et quartiers.</p>
+            <span class="tag">Semestriel</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal">
+    <h2>Nous contacter</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Rejoignez-nous</h3>
+            <p>Vous êtes un jeune au Sénégal ? Rejoignez la communauté JVJ !</p>
+            <a href="https://wa.me/+221700000000?text=Bonjour%20je%20veux%20rejoindre%20JVJ%20Sénégal" 
+               class="btn-whatsapp" 
+               target="_blank">
+                Contacter via WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>JVJ</h3>
+    <p>Jeunesse Vivante en Jésus</p>
+
+    <p>
+        <a href="../index.html">Accueil</a> |
+        <a href="../teams.html">Teams</a> |
+        <a href="../about.html">À propos</a> |
+        <a href="../contact.html">Contact</a>
+    </p>
+
+    <p>© 2026 JVJ - Tous droits réservés</p>
+</footer>
+
+<script>
+function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+</body>
+</html>

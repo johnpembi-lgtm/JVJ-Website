@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVJ France</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="../image/logo-jvj.jpg" alt="JVJ Logo">
+    </div>
+
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../teams.html">Teams</a>
+        <a href="../about.html">À propos</a>
+        <a href="../contact.html" class="btn">Nous rejoindre</a>
+    </nav>
+</header>
+
+<section class="hero" style="background-image: url('../image/image.png');">
+    <h1>JVJ France</h1>
+    <p>Le mouvement JVJ en France - Meknès</p>
+</section>
+
+<!-- À PROPOS -->
+<section class="section reveal">
+    <h2>À propos de JVJ France</h2>
+    
+    <div class="cards">
+        <div class="card">
+            <p>
+                <strong>JVJ France</strong> est la branche française du mouvement Jeunesse Vivante en Jésus. 
+                Basée à Meknès, cette communauté regroupe des jeunes chrétiens engagés dans leur foi 
+                et déterminés à impacter leur génération pour Christ.
+            </p>
+            <br>
+            <p>
+                Depuis sa création, JVJ France s'efforce de créer un environnement propice 
+                à l'épanouissement spirituel des jeunes, à travers des activités variées 
+                et un accompagnement personnalisé.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ACTIVITÉS -->
+<section class="section reveal">
+    <h2>Nos Activités</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Louange & Adoration</h3>
+            <p>Des moments de louange hebdomadaire pour approfondir notre relation avec Dieu.</p>
+            <span class="tag">Chaque semaine</span>
+        </div>
+
+        <div class="card">
+            <h3>Études Bibliques</h3>
+            <p>Des études approfondies de la Parole de Dieu pour former des disciples.</p>
+            <span class="tag">Mardi & Samedi</span>
+        </div>
+
+        <div class="card">
+            <h3>Formation & Discipulat</h3>
+            <p>Des programmes de formation pour développer les dons et-leaders de demain.</p>
+            <span class="tag">Mensuel</span>
+        </div>
+
+        <div class="card">
+            <h3>Évangélisation</h3>
+            <p>Des actions d'évangélisation dans les universités et les quartiers.</p>
+            <span class="tag">Trimestriel</span>
+        </div>
+
+        <div class="card">
+            <h3>Jeunes Leaders</h3>
+            <p>Un programme de développement du leadership chrétien pour les jeunes.</p>
+            <span class="tag">Continu</span>
+        </div>
+
+        <div class="card">
+            <h3>Retraites Spirituelles</h3>
+            <p>Des weekends de communion et de ressourcement spirituel.</p>
+            <span class="tag">Semestriel</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal">
+    <h2>Nous contacter</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Rejoignez-nous</h3>
+            <p>Vous êtes un jeune au Maroc ? Rejoignez la communauté JVJ France !</p>
+            <a href="https://wa.me/212600000000?text=Bonjour%20je%20veux%20rejoindre%20JVJ%20France" 
+               class="btn-whatsapp" 
+               target="_blank">
+                Contacter via WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>JVJ</h3>
+    <p>Jeunesse Vivante en Jésus</p>
+
+    <p>
+        <a href="../index.html">Accueil</a> |
+        <a href="../teams.html">Teams</a> |
+        <a href="../about.html">À propos</a> |
+        <a href="../contact.html">Contact</a>
+    </p>
+
+    <p>© 2026 JVJ - Tous droits réservés</p>
+</footer>
+
+<script>
+function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - JVJ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="image/logo-jvj.jpg" alt="JVJ Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="btn">Nous rejoindre</a>
+    </nav>
+</header>
+
+<section class="hero" style="background-image: url('image/image.png');">
+    <h1>À propos de JVJ</h1>
+    <p>Découvrez nos équipes et nos présence à travers le monde</p>
+</section>
+
+<!-- NOS TEAMS -->
+<section class="section reveal">
+    <h2>Nos Teams</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+        JVJ est organisé en différentes équipes qui travaillent ensemble pour impacter la jeunesse pour Christ.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Team Worship</h3>
+            <p>Responsable de la louange et de l'adoration lors des rassemblements.</p>
+            <a href="teams/worship.html" class="btn">Découvrir</a>
+        </div>
+
+        <div class="card">
+            <h3>Team Media & Communication</h3>
+            <p>Gestion des réseaux sociaux et communication digitale.</p>
+            <a href="teams/media.html" class="btn">Découvrir</a>
+        </div>
+
+        <div class="card">
+            <h3>Team Intercession</h3>
+            <p>Prière et soutien spirituel du groupe.</p>
+            <a href="teams/intercession.html" class="btn">Découvrir</a>
+        </div>
+    </div>
+</section>
+
+<!-- JVJ DANS LE MONDE -->
+<section class="section reveal">
+    <h2>JVJ dans le monde</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+        JVJ est présent dans plusieurs pays à travers le monde. Découvrez nos activités locales.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>JVJ France</h3>
+            <p>Le mouvement JVJ en France, basé à Meknès.</p>
+            <a href="countries/france.html" class="btn">Voir les activités</a>
+        </div>
+
+        <div class="card">
+            <h3>JVJ Centrafrique</h3>
+            <p>Le mouvement JVJ en République Centrafricaine.</p>
+            <a href="countries/centrafrique.html" class="btn">Voir les activités</a>
+        </div>
+
+        <div class="card">
+            <h3>JVJ Sénégal</h3>
+            <p>Le mouvement JVJ au Sénégal.</p>
+            <a href="countries/senegal.html" class="btn">Voir les activités</a>
+        </div>
+    </div>
+</section>
+
+<!-- QUI SOMMES-NOUS -->
+<section class="section reveal">
+    <h2>Qui sommes-nous ?</h2>
+    <div class="cards">
+        <div class="card">
+            <p>
+                <strong>JVJ (Jeunesse Vivante en Jésus)</strong> est un mouvement chrétien dédié à la jeunesse, 
+                visant à former, accompagner et impacter les jeunes pour Christ.
+            </p>
+            <br>
+            <p>
+                Nous croyons que la jeunesse a un rôle crucial à jouer dans l'édification du royaume de Dieu. 
+                À travers nos différentes équipes et nos activités, nous nous efforçons de créer un environnement 
+                où les jeunes peuvent grandir spirituellement, servir et être des leaders dans leurs communautés.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>JVJ</h3>
+    <p>Jeunesse Vivante en Jésus</p>
+
+    <p>
+        <a href="index.html">Accueil</a> |
+        <a href="teams.html">Teams</a> |
+        <a href="about.html">À propos</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>© 2026 JVJ - Tous droits réservés</p>
+</footer>
+
+<script>
+function revealOnScroll() {
+    const reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+</body>
+</html>
